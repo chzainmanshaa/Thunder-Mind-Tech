@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder Mind Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Project Detail Page/styles/navbar.css">
+    <link rel="stylesheet" href="../Project Detail Page/styles/footer.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_left_part">
+            <img src="../assets/logo-no-slogan@1x.png" alt="Logo">
+        </div>
+        <div class="nav_right_part">
+            <ul class="nav-links">
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#excel">Experties</a></li>
+                <li><a href="../index.html#client_reaction">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <a href="../index.html#contact"><button class="nav_get_started">Get Started</button></a>
+            <div class="menu">
+                <h3>Menu</h3>
+                <img src="../assets/menu.png" alt="Menu" class="menubars" onclick="toggleMenu()">
+            </div>
+        </div>
+    </div>
+    <div class="side-menu" id="sideMenu">
+        <div class="close-btn" onclick="toggleMenu()">X</div>
+        <ul class="menu-items" id="menu">
+            <li><a href="#" class="menu-item">Home</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#services" class="menu-item">Services</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#projects" class="menu-item">Projects</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#excel" class="menu-item">Experties</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#team" class="menu-item">About</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#contact" class="menu-item">Contact</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="../assets/twitter.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="../assets/linkedin-logo.png" alt="LinkedIn"></a>
+            <a href="#" class="social-icon"><img src="../assets/facebook.png" alt="Facebook"></a>
+        </div>
+    </div>
+    <div class="title_container">
+        <h1>Featured Projects</h1>
+        <p>Discover our innovative web and mobile solutions crafted with cutting-edge technology.</p>
+    </div>
+    <section class="projects" id="projects">
+        <div class="buttons_with_types">
+            <button id="allProjects">All Projects</button>
+            <button id="webProjects">Web Projects</button>
+            <button id="mobileProjects">Mobile Projects</button>
+        </div>
+        <div class="projects_container">
+            <div class="project_card">
+                <div class="upper_project_card_container">
+                    <img src="../assets/FirstProject.png" alt="Project Image">
+                </div>
+                <div class="lower_project_card_container">
+                    <div class="project_names_and_icons">
+                        <h3>Tatreez Garden</h3>
+                        <div class="project_card_icons">
+                                <img src="../assets/Earth.png" alt="Earth Icon">
+                                <img src="../assets/Phone.png" alt="Phone Icon">
+                           
+                        </div>
+                    </div>
+                    <p style="color: #9CA3AF;">Tatreez Garden combines embroidery-inspired design
+                        with native plant exploration.</p>
+                    <div class="technologies_used_in_making_project">
+                        <div class="technologies">Next.js</div>
+                        <div class="technologies">comfyUI</div>
+                    </div>
+                    <a href="" style="color: #9CA3AF;">Complete project detail →</a>
+                </div>
+            </div>
+            <div class="project_card">
+                <div class="upper_project_card_container">
+                    <img src="../assets/SecondProject.png" alt="Project Image">
+                </div>
+                <div class="lower_project_card_container">
+                    <div class="project_names_and_icons">
+                        <h3>Bimmer Portal</h3>
+                        <img src="../assets/Earth.png" alt="Earth Icon">
+                    </div>
+                    <p style="color: #9CA3AF;">Bimmer Portal provides an API for seamless BMW
+                        and MINI VIN lookups.</p>
+                    <div class="technologies_used_in_making_project">
+                        <div class="technologies">Next.js</div>
+                        <div class="technologies">Django</div>
+                        <div class="technologies">postgresql</div>
+                        <div class="technologies">Scrapy</div>
+                    </div>
+                    <a href="" style="color: #9CA3AF;">Complete project detail →</a>
+                </div>
+            </div>
+            <div class="project_card">
+                <div class="upper_project_card_container">
+                    <img src="../assets/FirstProject.png" alt="Project Image">
+                </div>
+                <div class="lower_project_card_container">
+                    <div class="project_names_and_icons">
+                        <h3>Tatreez Garden</h3>
+                        <div class="project_card_icons">
+                            <img src="../assets/Earth.png" alt="Earth Icon">
+                            <img src="../assets/Phone.png" alt="Phone Icon">
+                        </div>
+                    </div>
+                    <p style="color: #9CA3AF;">Tatreez Garden combines embroidery-inspired design
+                        with native plant exploration.</p>
+                    <div class="technologies_used_in_making_project">
+                        <div class="technologies">Next.js</div>
+                        <div class="technologies">comfyUI</div>
+                    </div>
+                    <a href="" style="color: #9CA3AF;">Complete project detail →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="../assets/Brew Image.png" alt="Logo">
+            <h5 style="margin-top: -10px;">IDEAS, INNOVATION, IMPACT</h5>
+        </div>
+        <div class="footer_quick-links">
+            <h4>Quick Links</h4>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>Projects</p>
+            <p>Contact</p>
+        </div>
+        <div class="footer_services">
+            <h4>Services</h4>
+            <p>Web Development</p>
+            <p>Backend Development</p>
+            <p>Web Scraping</p>
+            <p>APi Intergration</p>
+            <a href="" style="color: #FF6A00; text-decoration: underline;">Learn More</a>
+        </div>
+        <div class="footer_contact">
+            <h4>Connect With Us</h4>
+            <div class="footer_icons">
+                <img src="../assets/twitter.png" alt="Social Icons">
+                <img src="../assets/linkedin-logo.png" alt="Social Icons">
+                <img src="../assets/github.png" alt="Social Icons">
+                <img src="../assets/Instagram.png" alt="Social Icons">
+            </div>
+            <div class="mail">
+                <img src="../assets/inbox.png" alt="Inbox Icon">
+                <p>contact@example.com</p>
+            </div>
+            <div class="number">
+                <img src="../assets/call.png" alt="Call Icon">
+                <p>+92 331 0446844</p>
+            </div>
+            <div class="location">
+                <img src="../assets/Location.png" alt="Location Icon">
+                <p>63-A Commercial Plaza Omega
+                    Residencia Faiz Pur Lahore</p>
+                <img src="../assets/GoTo.png" alt="Go To Map">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="../script.js"></script>
+
+</html>

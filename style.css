@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* padding and borders are included in the element's total width and height */
+}
+
+
+body {
+    background-color: #111827;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+

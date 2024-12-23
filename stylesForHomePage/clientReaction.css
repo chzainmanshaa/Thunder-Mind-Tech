@@ -1,0 +1,129 @@
+.client_reaction {
+    text-align: center;
+    padding-top: 20px;
+    background: #18202F;
+}
+
+.client_container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    margin-left: 35px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.client_card {
+    width: 380px;
+    height: 250px;
+    background: #1F2937;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+.client_card:hover {
+    transform: translateY(-5px); 
+}
+
+.client_intro {
+    display: flex;
+    gap: 15px;
+}
+
+.client_rating img {
+    width: 20px;
+    height: 20px;
+    margin-right: 2px;
+}
+
+.all_client_reactions {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    flex-wrap: wrap; 
+}
+
+.all_client_reactions h4 {
+    color: #9CA3AF;
+}
+
+.client_reaction_amount {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* For Small Screens Mobile */
+@media (max-width: 767px) {
+    .client_container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .client_card {
+        width: 100%;
+        max-width: 350px; 
+        height: auto; 
+    }
+
+    .all_client_reactions {
+        padding: 40px 20px; 
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .client_reaction_amount {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* For Medium Screens Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .client_container {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .client_card {
+        width: 45%; 
+    }
+
+    .all_client_reactions {
+        padding: 40px 20px;
+    }
+
+    .client_reaction_amount {
+        width: 23%;
+    }
+}
+
+/* For Large Screens Desktop */
+@media (min-width: 1025px) {
+    .client_container {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .client_card {
+        width: 30%; 
+    }
+
+    .all_client_reactions {
+        padding: 80px;
+    }
+
+    .client_reaction_amount {
+        width: 23%;
+    }
+}

@@ -1,0 +1,121 @@
+.key_features {
+    margin-top: 40px;
+}
+
+.key_features h4 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.key_features .card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.card {
+    background-color: #374151;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;  
+}
+
+.card h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #9CA3AF;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: -4px;
+}
+
+/* For tablets  */
+@media (max-width: 1024px) {
+    .key_features h4 {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .key_features .card-container {
+        gap: 15px;
+        justify-content: center; 
+    }
+
+    .card {
+        width: 45%;  
+        margin-bottom: 15px;
+    }
+
+    .card h4 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 13px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .key_features h4 {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .key_features .card-container {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;  
+        margin-bottom: 15px;
+    }
+
+    .card h4 {
+        font-size: 18px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+}
+
+/* For small devices*/
+@media (max-width: 480px) {
+    .key_features h4 {
+        font-size: 24px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    .key_features .card-container {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;  
+        margin-bottom: 10px;
+        padding: 15px;  
+    }
+
+    .card h4 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 11px;
+    }
+}

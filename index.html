@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder Mind Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./stylesForHomePage/clientReaction.css">
+    <link rel="stylesheet" href="./stylesForHomePage/contact.css">
+    <link rel="stylesheet" href="./stylesForHomePage/excel.css">
+    <link rel="stylesheet" href="./stylesForHomePage/footer.css">
+    <link rel="stylesheet" href="./stylesForHomePage/introPage.css">
+    <link rel="stylesheet" href="./stylesForHomePage/navbar.css">
+    <link rel="stylesheet" href="./stylesForHomePage/ourTeam.css">
+    <link rel="stylesheet" href="./stylesForHomePage/project.css">
+    <link rel="stylesheet" href="./stylesForHomePage/services.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <img src="./assets/logo-no-slogan@1x.png" alt="Logo" class="logo">
+        <div class="menu">
+            <h3>Menu</h3>
+            <img src="./assets/menu.png" alt="Menu" class="menubars" onclick="toggleMenu()">
+        </div>
+    </div>
+
+    <div class="side-menu" id="sideMenu">
+        <div class="close-btn" onclick="toggleMenu()">X</div>
+        <ul class="menu-items" id="menu">
+            <li><a href="#" class="menu-item">Home</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#services" class="menu-item">Services</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#projects" class="menu-item">Projects</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#excel" class="menu-item">Experties</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#team" class="menu-item">About</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#contact" class="menu-item">Contact</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="./assets/twitter.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="./assets/linkedin-logo.png" alt="LinkedIn"></a>
+            <a href="#" class="social-icon"><img src="./assets/facebook.png" alt="Facebook"></a>
+        </div>
+    </div>
+
+    <section class="intro">
+        <h1>We are <span class="highlight">ThunderMinds.</span></h1>
+        <h1>We Transform Your Business</h2>
+            <div class="intro_para_container">
+                <p>Expert team of developers and designers crafting innovative software solutions<br class="line-break">
+                    for the modern world.
+                </p>
+            </div>
+            <div class="home_page_buttons">
+                <button class="get_started_buttons">
+                    Get Started
+                    <span><img src="./assets/getstartedicon.png" alt="Icon"></span>
+                </button>
+                <button class="view_project">
+                    View Project
+                </button>
+            </div>
+    </section>
+    <section class="services" id="services">
+        <h1 class="services_main_heading">Our Services</h1>
+        <p class="services_main_para">Comprehensive digital solutions tailored to your business needs</p>
+
+        <div class="services_row">
+            <div class="card">
+                <img src="./assets/webdevicon.png" alt="Icon">
+                <h1>Web Development</h1>
+                <p>Custom web applications and <br> responsive websites built with <br> cutting-edge technologies.</p>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Full Stack Development</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>E-commerce Solutions</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Progressive Web Apps</p>
+                </span>
+            </div>
+            <div class="card">
+                <img src="./assets/backendicon.png" alt="Icon">
+                <h1>Backend Development</h1>
+                <p>Robust backend solutions with <br> modern technologies and <br> frameworks.</p>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>API Development</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Database Design</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Server Architecture</p>
+                </span>
+            </div>
+            <div class="card">
+                <img src="./assets/devopsicon.png" alt="Icon">
+                <h1>DevOps</h1>
+                <p>Streamlined deployment processes and infrastructure management for continuous integration.</p>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>CI/CD pipelines</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Infrastructure as code</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Monitoring setup</p>
+                </span>
+            </div>
+            <div class="card">
+                <img src="./assets/apiicon.png" alt="Icon" style="width: 28px;">
+                <h1>API Integration</h1>
+                <p>Scalable cloud infrastructure and DevOps services for modern businesses.</p>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>RESTful API integration</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Custom API development</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Authentication systems</p>
+                </span>
+            </div>
+        </div>
+        <div class="services_row">
+            <div class="card">
+                <img src="./assets/openedicon.png" alt="Icon">
+                <h1>Open-edX/LMS Development</h1>
+                <p>Custom learning management solutions and Open-edX implementations.</p>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Platform Customization</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Course Management</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Learning Analytics</p>
+                </span>
+            </div>
+            <div class="card">
+                <img src="./assets/llmapiicon.png" alt="Icon">
+                <h1>LLM/AI Integration</h1>
+                <p>Advanced AI solutions and language model integrations.</p>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Custom AI Models</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>NLP Solutions</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>AI Automation</p>
+                </span>
+            </div>
+            <div class="card">
+                <img src="./assets/scrapingicon.png" alt="Icon">
+                <h1>Web Scraping</h1>
+                <p>Efficient data extraction and web scraping solutions.</p>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Automated Scraping</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Data Processing</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Custom Scrapers</p>
+                </span>
+            </div>
+            <div class="card">
+                <img src="./assets/etlicon.png" alt="Icon">
+                <h1>ETL Development</h1>
+                <p>Comprehensive ETL solutions for data management.</p>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Data Pipeline Design</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Data Transformation</p>
+                </span>
+                <span><img src="./assets/tickicon.png" alt="Tick Icon" class="tick">
+                    <p>Process automation</p>
+                </span>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h1 class="project_main_heading">Featured Projects</h1>
+        <p class="project_main_para">Discover our latest success stories</p>
+        <div class="projects_container">
+            <div class="project_card">
+                <div class="upper_project_card_container">
+                    <img src="./assets/FirstProject.png" alt="Project Image">
+                </div>
+                <div class="lower_project_card_container">
+                    <div class="project_names_and_icons">
+                        <h3>Tatreez Garden</h3>
+                        <div class="project_card_icons">
+                            <img src="./assets/Earth.png" alt="Earth Icon">
+                            <img src="./assets/Phone.png" alt="Phone Icon">
+                        </div>
+                    </div>
+                    <p style="color: #9CA3AF;">Tatreez Garden combines embroidery-inspired design
+                        with native plant exploration.</p>
+                    <div class="technologies_used_in_making_project">
+                        <div class="technologies">Next.js</div>
+                        <div class="technologies">comfyUI</div>
+                    </div>
+                    <a href="" style="color: #9CA3AF;">Complete project detail →</a>
+                </div>
+            </div>
+            <div class="project_card">
+                <div class="upper_project_card_container">
+                    <img src="./assets/SecondProject.png" alt="Project Image">
+                </div>
+                <div class="lower_project_card_container">
+                    <div class="project_names_and_icons">
+                        <h3>Bimmer Portal</h3>
+                        <div class="project_card_icons">
+                            <img src="./assets/Earth.png" alt="Earth Icon">
+                        </div>
+                    </div>
+                    <p style="color: #9CA3AF;">Bimmer Portal provides an API for seamless BMW
+                        and MINI VIN lookups.</p>
+                    <div class="technologies_used_in_making_project">
+                        <div class="technologies">Next.js</div>
+                        <div class="technologies">Django</div>
+                        <div class="technologies">postgresql</div>
+                        <div class="technologies">Scrapy</div>
+                    </div>
+                    <a href="" style="color: #9CA3AF;">Complete project detail →</a>
+                </div>
+            </div>
+            <div class="project_card">
+                <div class="upper_project_card_container">
+                    <img src="./assets/FirstProject.png" alt="Project Image">
+                </div>
+                <div class="lower_project_card_container">
+                    <div class="project_names_and_icons">
+                        <h3>Tatreez Garden</h3>
+                        <div class="project_card_icons">
+                            <img src="./assets/Earth.png" alt="Earth Icon" class="earth_icon">
+                            <img src="./assets/Phone.png" alt="Phone Icon">
+                        </div>
+                    </div>
+                    <p style="color: #9CA3AF;">Tatreez Garden combines embroidery-inspired design
+                        with native plant exploration.</p>
+                    <div class="technologies_used_in_making_project">
+                        <div class="technologies">Next.js</div>
+                        <div class="technologies">comfyUI</div>
+                    </div>
+                    <a href="" style="color: #9CA3AF;">Complete project detail →</a>
+                </div>
+            </div>
+        </div>
+        <a href="" class="view-more">
+            View More
+            <span><img src="./assets/orangeArrowRight.png" alt="Arrow Icon"></span>
+        </a>
+
+    </section>
+    <section class="excel" id="excel">
+        <h1>What We Excel At</h1>
+        <p style="color: #9CA3AF;margin-top: 10px;">Cutting-edge technologies we use to build amazing solutions </p>
+        <div class="excellation_container">
+            <div class="excellation_card">
+                <div class="excellation_card_upper_part">
+                    <img src="./assets/Python.png" alt="Python Icon">
+                    <h4>Python</h1>
+                </div>
+                <div class="excellation_card_lower_part">
+                    <div class="technologies">Python</div>
+                    <div class="technologies">Django</div>
+                    <div class="technologies">FastAPI</div>
+                </div>
+            </div>
+            <div class="excellation_card">
+                <div class="excellation_card_upper_part">
+                    <img src="./assets/Js.png" alt="JS Icon">
+                    <h4>Frontend Technologies</h1>
+                </div>
+                <div class="excellation_card_lower_part">
+                    <div class="technologies">React.js</div>
+                    <div class="technologies">Vue.js</div>
+                    <div class="technologies">TypeScript</div>
+                    <div class="technologies">Next.js</div>
+                </div>
+            </div>
+            <div class="excellation_card">
+                <div class="excellation_card_upper_part">
+                    <img src="./assets/Databases.png" alt="Databases Icon">
+                    <h4>Databases</h1>
+                </div>
+                <div class="excellation_card_lower_part">
+                    <div class="technologies">MySQL</div>
+                    <div class="technologies">MongoDB</div>
+                </div>
+            </div>
+            <div class="excellation_card">
+                <div class="excellation_card_upper_part">
+                    <img src="./assets/DevOpsTools.png" alt="Python Icon">
+                    <h4>DevOps Tools</h1>
+                </div>
+                <div class="excellation_card_lower_part">
+                    <div class="technologies">Docker</div>
+                    <div class="technologies">Nginx</div>
+                    <div class="technologies">PM2</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="client_reaction" id="client_reaction">
+        <h1>What Our <span style="color: #FF6A00;">Client</span> Say About Us</h1>
+        <p style="color: #9CA3AF; margin-top: 10px;">See their experiences in their own words.</p>
+        <div class="client_container">
+            <div class="client_card">
+                <div class="client_intro">
+                    <img src="./assets/firstClient.png" alt="Client Image">
+                    <div style="display: flex; flex-direction: column; margin-top: 12px;">
+                        <h4>John Smith</h4>
+                        <h4 style="color: #9CA3AF;">CEO, TechCorp</p>
+                    </div>
+                </div>
+                <div class="client_message">
+                    <p>"ByteCraft Studios delivered an exceptional e-
+                        commerce platform that exceeded our expectations.
+                        Their team's expertise and dedication were
+                        impressive."</p>
+                </div>
+                <div class="client_rating">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                </div>
+            </div>
+            <div class="client_card">
+                <div class="client_intro">
+                    <img src="./assets/secondClient.png" alt="Client Image">
+                    <div style="display: flex; flex-direction: column; margin-top: 12px;">
+                        <h4>Sarah Johnson</h4>
+                        <h4 style="color: #9CA3AF;">CTO, HealthTech</p>
+                    </div>
+                </div>
+                <div class="client_message">
+                    <p>"The mobile healthcare app developed by ByteCraft
+                        Studios has transformed our patient care delivery.
+                        Outstanding work!"</p>
+                </div>
+                <div class="client_rating">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                </div>
+            </div>
+            <div class="client_card">
+                <div class="client_intro">
+                    <img src="./assets/thirdClient.png" alt="Client Image">
+                    <div style="display: flex; flex-direction: column; margin-top: 12px;">
+                        <h4>Michael Chen</h4>
+                        <h4 style="color: #9CA3AF;">Director, EduLearn</p>
+                    </div>
+                </div>
+                <div class="client_message">
+                    <p>"The custom learning platform has significantly
+                        improved our student engagement and course
+                        completion rates. Highly recommended!"</p>
+                </div>
+                <div class="client_rating">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                    <img src="./assets/Star.png" alt="Ratings Icon">
+                </div>
+            </div>
+        </div>
+        <div class="all_client_reactions">
+            <div class="client_reaction_amount">
+                <h2>10</h2>
+                <h4>Projects Completed</h4>
+            </div>
+            <div class="client_reaction_amount">
+                <h2>10</h2>
+                <h4>Happy Clients</h4>
+            </div>
+            <div class="client_reaction_amount">
+                <h2>2</h2>
+                <h4>Awards</h4>
+            </div>
+            <div class="client_reaction_amount">
+                <h2>10-50</h2>
+                <h4>Team Capacity</h4>
+            </div>
+        </div>
+    </section>
+    <section class="team" id="team">
+        <h1 style="text-align: center;">Meet Our Team</h1>
+        <p style="color: #9CA3AF; text-align: center;">Talented professionals dedicated to delivering exceptional
+            results </p>
+        <div class="team_members_card_container">
+            <div class="card_for_team_member">
+                <div class="upper_part">
+                    <img src="./assets/firstTeamMember.png" alt="Client Image">
+                </div>
+                <div class="lower_part">
+                    <h3>James Wilson</h4>
+                        <h5 style="color: #F4F7F9;">Lead Developer</h5>
+                        <p style="color: #9CA3AF;">10+ years of experience in full-stack
+                            development</p>
+                        <div class="team_members_social_icons">
+                            <img src="./assets/linkedin-logo.png" alt="LinkedIn Icon" class="team_members_social_icon">
+                            <img src="./assets/github.png" alt="Github Icon" class="team_members_social_icon">
+                            <img src="./assets/twitter.png" alt="Twitter Icon" class="team_members_social_icon">
+                        </div>
+                </div>
+            </div>
+            <div class="card_for_team_member">
+                <div class="upper_part">
+                    <img src="./assets/secondTeamMember.png" alt="Client Image">
+                </div>
+                <div class="lower_part">
+                    <h3>Sarah Chen</h4>
+                        <h5 style="color: #F4F7F9;">UX Designer</h5>
+                        <p style="color: #9CA3AF;">Expert in creating intuitive user
+                            experiences</p>
+                        <div class="team_members_social_icons">
+                            <img src="./assets/linkedin-logo.png" alt="LinkedIn Icon" class="team_members_social_icon">
+                            <img src="./assets/Earth.png" alt="Earth Icon" class="team_members_social_icon">
+                            <img src="./assets/Be.png" alt="Be Icon" class="team_members_social_icon">
+                        </div>
+                </div>
+            </div>
+            <div class="card_for_team_member">
+                <div class="upper_part">
+                    <img src="./assets/thirdTeamMember.png" alt="Client Image">
+                </div>
+                <div class="lower_part">
+                    <h3>Michael Brown</h4>
+                        <h5 style="color: #F4F7F9;">Backend Engineer</h5>
+                        <p style="color: #9CA3AF;">Specialized in scalable architecture
+                            design</p>
+                        <div class="team_members_social_icons">
+                            <img src="./assets/linkedin-logo.png" alt="LinkedIn Icon" class="team_members_social_icon">
+                            <img src="./assets/github.png" alt="Github Icon" class="team_members_social_icon">
+                            <img src="./assets/comb.png" alt="Comb Icon" class="team_members_social_icon">
+                        </div>
+                </div>
+            </div>
+            <div class="card_for_team_member">
+                <div class="upper_part">
+                    <img src="./assets/fourthTeamMember.png" alt="Client Image">
+                </div>
+                <div class="lower_part">
+                    <h3>Emma Davis</h4>
+                        <h5 style="color: #F4F7F9;">Project Manager</h5>
+                        <p style="color: #9CA3AF;">Certified Scrum Master with 8+ years
+                            experience</p>
+                        <div class="team_members_social_icons">
+                            <img src="./assets/linkedin-logo.png" alt="LinkedIn Icon" class="team_members_social_icon">
+                            <img src="./assets/twitter.png" alt="Twitter Icon" class="team_members_social_icon">
+                            <img src="./assets/littleCircles.png" alt="Circles Icon" class="team_members_social_icon">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="contact_left_part">
+            <h1>Get In Touch</h1>
+            <p style="color: #9CA3AF;">Have a project in mind? Let's discuss how we can help you achieve your goals.</p>
+            <form action="">
+                <p>Name</p>
+                <input type="text">
+                <p>Email</p>
+                <input type="text">
+                <p>Message</p>
+                <input type="text" style="height: 50px;">
+                <button>
+                    <img src="./assets/messageIcon.png" alt="Message Icon">
+                    Send Message
+                </button>
+            </form>
+        </div>
+
+        <div class="contact_or">
+            <p>OR</p>
+        </div>
+
+        <div class="contact_right_part">
+            <div class="contact_right_right_part">
+                <h1>Connect With Us Instantly</h1>
+                <p style="color: #9CA3AF; margin-top: 10px;">Scan the QR code to connect with our team directly</p>
+                <div class="scanner-container">
+                    <img src="./assets/Contact QR scanner.png" alt="QR Code">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="./assets/Brew Image.png" alt="Logo">
+            <h5>IDEAS, INNOVATION, IMPACT</h5>
+        </div>
+        <div class="footer_quick-links">
+            <h4>Quick Links</h4>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>Projects</p>
+            <p>Contact</p>
+        </div>
+        <div class="footer_services">
+            <h4>Services</h4>
+            <p>Web Development</p>
+            <p>Backend Development</p>
+            <p>Web Scraping</p>
+            <p>API Integration</p>
+            <a href="" style="color: #FF6A00; text-decoration: underline;">Learn More</a>
+        </div>
+        <div class="footer_contact">
+            <h4>Connect With Us</h4>
+            <div class="footer_icons">
+                <img src="./assets/twitter.png" alt="Social Icons">
+                <img src="./assets/linkedin-logo.png" alt="Social Icons">
+                <img src="./assets/github.png" alt="Social Icons">
+                <img src="./assets/Instagram.png" alt="Social Icons">
+            </div>
+            <div class="mail">
+                <img src="./assets/inbox.png" alt="Inbox Icon">
+                <p>contact@example.com</p>
+            </div>
+            <div class="number">
+                <img src="./assets/call.png" alt="Call Icon">
+                <p>+92 331 0446844</p>
+            </div>
+            <div class="location">
+                <img src="./assets/Location.png" alt="Location Icon">
+                <p>63-A Commercial Plaza Omega Residencia Faiz Pur Lahore</p>
+                <img src="./assets/GoTo.png" alt="Go To Map">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

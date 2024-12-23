@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunder Mind Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/projectData.css">
+    <link rel="stylesheet" href="./styles/projectGallery.css">
+    <link rel="stylesheet" href="./styles/keyFeatures.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav_left_part">
+            <img src="../assets/logo-no-slogan@1x.png" alt="Logo">
+        </div>
+        <div class="nav_right_part">
+            <ul class="nav-links">
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#excel">Experties</a></li>
+                <li><a href="../index.html#client_reaction">About</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <a href="../index.html#contact"><button class="nav_get_started">Get Started</button></a>
+            <div class="menu">
+                <h3>Menu</h3>
+                <img src="../assets/menu.png" alt="Menu" class="menubars" onclick="toggleMenu()">
+            </div>
+        </div>
+    </div>
+    <div class="side-menu" id="sideMenu">
+        <div class="close-btn" onclick="toggleMenu()">X</div>
+        <ul class="menu-items" id="menu">
+            <li><a href="#" class="menu-item">Home</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#services" class="menu-item">Services</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#projects" class="menu-item">Projects</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#excel" class="menu-item">Experties</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#team" class="menu-item">About</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+            <li><a href="#contact" class="menu-item">Contact</a></li>
+            <hr style="color: gray; margin-top: -6px;">
+        </ul>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="../assets/twitter.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="../assets/linkedin-logo.png" alt="LinkedIn"></a>
+            <a href="#" class="social-icon"><img src="../assets/facebook.png" alt="Facebook"></a>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <div class="main_title_container" style="text-align: center; padding: 10px; margin-bottom: -50px;">
+            <h1 style="color: white;">Tatreez garden</h1>
+            <p style="color: #9CA3AF; margin-top: -10px;">Tatreez Garden is an AI platform for creating patterns inspired by Palestinian
+                embroidery and culturally significant plants.</p>
+        </div>
+        <div class="project_data">
+            <div class="two_large_upper_container">
+                <div class="project_img_container">
+                    <img src="../assets/FirstProject.png" alt="Project Image">
+                </div>
+                <div class="project_main_data_container">
+                    <h3>Project Overview</h3>
+                    <p>Tatreez Garden is an AI-driven platform that combines cultural heritage with modern
+                        technology, allowing users to create personalized patterns inspired by Tatreez, a
+                        traditional Palestinian embroidery. The platform also integrates plants significant to
+                        Palestinian ecology and culture, weaving their symbolism into designs. With real-time
+                        image generation and an automated workflow, Tatreez Garden celebrates identity,
+                        creativity, and the preservation of cultural memory through innovative technology.</p>
+                    <h4>Industry</h4>
+                    <p>Artificial Intelligence (AI) </p>
+                    <h4>Timeline</h4>
+                    <p>1 month</p>
+                    <h4>Tech Stack</h4>
+                    <div class="technologies_used_in_making_project">
+                        <div class="technologies">Next.js</div>
+                        <div class="technologies">Django</div>
+                        <div class="technologies">postgresql</div>
+                        <div class="technologies">Scrapy</div>
+                    </div>
+                </div>
+            </div>
+            <div class="three_small_lower_container">
+                <div class="small-card">
+                    <h4>Challenge</h4>
+                    <p>Integrating ComfyUI with the platform for real-time
+                        image generation was complex due to compatibility
+                        issues.</p>
+                </div>
+                <div class="small-card">
+                    <h4>Solution</h4>
+                    <p>A custom FastAPI layer was implemented to enable
+                        seamless communication with ComfyUI, ensuring
+                        smooth operation.</p>
+                </div>
+                <div class="small-card">
+                    <h4>Results</h4>
+                    <p>The platform now generates custom AI images in real
+                        time, providing users with high-quality, personalized
+                        designs effortlessly.</p>
+                </div>
+            </div>
+        </div>
+        <div class="key_features">
+               <h4>Key Features</h4>
+               <div class="card-container">
+               <div class="card">
+                <h4>AI-Generated Designs</h4>
+                <p>Create unique patterns inspired by traditional Palestinian embroidery.</p>
+               </div>
+               <div class="card">
+                <h4>Cultural Integration</h4>
+                <p>Incorporates plants significant to Palestinian ecology and heritage.</p>
+               </div>
+               <div class="card">
+                <h4>Real-Time Image Generation</h4>
+                <p>Delivers custom designs instantly with high precision.</p>
+               </div>
+               <div class="card">
+                <h4>Automated Workflow</h4>
+                <p>Streamlined processes for effortless user experience.</p>
+               </div>
+            </div>
+        </div>
+        <div class="project_gallery">
+            <h4>Project Gallery</h4>
+            <div class="img_container">
+                <img src="../assets/projectNumberOneImg.png" alt="Project Image" class="project-img">
+                <img src="../assets/projectNumberTwoImg.png" alt="Project Image" class="project-img">
+                <img src="../assets/projectNumberThreeImg.png" alt="Project Image" class="project-img">
+            </div>
+            <button class="view_all_projects_btn">
+                View all projects
+                <img src="../assets/rocketIcon.png" alt="Icon">
+            </button>
+        </div>
+        <hr style="margin-top: 60px;">
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="../assets/Brew Image.png" alt="Logo">
+                <h5 style="margin-top: -10px;">IDEAS, INNOVATION, IMPACT</h5>
+            </div>
+            <div class="footer_quick-links">
+                <h4>Quick Links</h4>
+                <p>About Us</p>
+                <p>Services</p>
+                <p>Projects</p>
+                <p>Contact</p>
+            </div>
+            <div class="footer_services">
+                <h4>Services</h4>
+                <p>Web Development</p>
+                <p>Backend Development</p>
+                <p>Web Scraping</p>
+                <p>APi Intergration</p>
+                <a href="" style="color: #FF6A00; text-decoration: underline;">Learn More</a>
+            </div>
+            <div class="footer_contact">
+                <h4>Connect With Us</h4>
+                <div class="footer_icons">
+                    <img src="../assets/twitter.png" alt="Social Icons">
+                    <img src="../assets/linkedin-logo.png" alt="Social Icons">
+                    <img src="../assets/github.png" alt="Social Icons">
+                    <img src="../assets/Instagram.png" alt="Social Icons">
+                </div>
+                <div class="mail">
+                    <img src="../assets/inbox.png" alt="Inbox Icon">
+                    <p>contact@example.com</p>
+                </div>
+                <div class="number">
+                    <img src="../assets/call.png" alt="Call Icon">
+                    <p>+92 331 0446844</p>
+                </div>
+                <div class="location">
+                    <img src="../assets/Location.png" alt="Location Icon">
+                    <p>63-A Commercial Plaza Omega 
+                        Residencia Faiz Pur Lahore</p>
+                        <img src="../assets/GoTo.png" alt="Go To Map">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../script.js"></script>
+</html>

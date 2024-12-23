@@ -1,0 +1,223 @@
+.contact {
+    background: #1F2937; 
+    color: #F3F4F6; 
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact_left_part {
+    flex: 1;
+    max-width: 50%;
+}
+
+.contact_right_part {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.contact_left_part h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact_left_part p {
+    font-size: 16px;
+    color: #9CA3AF;
+}
+
+.contact_left_part form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_left_part form p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact_left_part input[type="text"] {
+    padding: 10px;
+    border: 1px solid #4B5563;
+    border-radius: 5px;
+    background-color: #2D3748;
+    color: #F3F4F6;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.contact_left_part button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFEADC; 
+    color: #FF6A00;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact_left_part button:hover {
+    background-color: #fcdcc6; 
+}
+
+.contact_left_part button img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+.contact_or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 auto;
+    color: #9CA3AF;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 60px;    
+}
+
+.contact_right_part .contact_right_right_part {
+    margin-top: -80px;
+}
+
+.contact_right_part h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.contact_right_part img {
+    width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* For Small Screens Mobile */
+@media (max-width: 767px) {
+    .contact {
+        flex-direction: column; 
+        padding: 30px 10px; 
+    }
+
+    .contact_left_part, .contact_right_part {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact_left_part h1 {
+        font-size: 28px; 
+    }
+
+    .contact_left_part p {
+        font-size: 14px; 
+    }
+
+    .contact_left_part input[type="text"] {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .contact_left_part button {
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+
+    .contact_or {
+        font-size: 16px; 
+        margin: 15px 0; 
+        margin-bottom: 60px;
+    }
+
+    .contact_right_part h1 {
+        font-size: 24px; 
+    }
+
+    .contact_right_part img {
+        width: 150px; 
+    }
+}
+
+/* For Medium Screens Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contact {
+        flex-direction: column; 
+        padding: 40px 20px;
+    }
+
+    .contact_left_part, .contact_right_part {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .contact_left_part h1 {
+        font-size: 30px;
+    }
+
+    .contact_left_part input[type="text"] {
+        padding: 12px;
+        font-size: 15px;
+    }
+
+    .contact_left_part button {
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+
+    .contact_right_part h1 {
+        font-size: 26px;
+    }
+
+    .contact_right_part img {
+        width: 180px;
+    }
+}
+
+/* For Large Screens Desktop */
+@media (min-width: 1025px) {
+    .contact {
+        flex-direction: row; 
+        padding: 50px 40px;
+    }
+
+    .contact_left_part, .contact_right_part {
+        max-width: 50%; 
+        text-align: left;
+    }
+
+  
+
+    .contact_left_part h1 {
+        font-size: 32px; 
+    }
+
+    .contact_left_part input[type="text"] {
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    .contact_left_part button {
+        padding: 16px 28px;
+        font-size: 18px;
+    }
+
+    .contact_right_part h1 {
+        font-size: 35px;
+    }
+
+    .contact_right_part{
+        text-align: center;
+    }
+
+    .contact_right_part img {
+        width: 220px;
+    }
+}

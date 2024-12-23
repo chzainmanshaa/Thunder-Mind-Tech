@@ -1,0 +1,135 @@
+.services {
+    text-align: center;
+    padding: 50px 10px;
+    background-color: #111827;
+    color: white;
+}
+
+.services_main_heading {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.services_main_para {
+    color: gray;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #333;
+    width: 100%; 
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    margin-bottom: 20px; 
+}
+
+.card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.card h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF6A00;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.card span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.card span img {
+    width: 12px;
+    height: 12px;
+}
+
+.card span p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.services_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    margin-bottom: 30px;
+}
+
+/* Responsive Design: Mobile */
+@media (max-width: 768px) {
+    .services_row {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .card {
+        width: 100%; 
+        padding: 15px;
+    }
+
+    .services_main_heading {
+        font-size: 28px;
+    }
+
+    .services_main_para {
+        font-size: 16px;
+    }
+}
+
+/* Responsive Design: Tablet */
+@media (max-width: 1024px) {
+    .services_row {
+        flex-direction: row;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .card {
+        width: 65%;
+    }
+
+    .services_main_heading {
+        font-size: 32px;
+    }
+
+    .services_main_para {
+        font-size: 18px;
+    }
+}
+
+/* Responsive Design: Desktop */
+@media (min-width: 1025px) {
+    .services_row {
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .card {
+        width: 23%; 
+    }
+
+    .services_main_heading {
+        font-size: 40px;
+    }
+
+    .services_main_para {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,117 @@
+.team {
+    margin-bottom: 20px;
+}
+
+.team_members_card_container {
+    display: flex;
+    gap: 30px;
+    margin-left: 25px;
+    margin-top: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+.card_for_team_member {
+    width: 280px;
+    background: #1F2937;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    cursor: default;
+}
+
+.card_for_team_member:hover {
+    transform: translateY(-5px); 
+}
+
+.card_for_team_member .upper_part {
+    height: 60%;
+}
+
+.card_for_team_member .upper_part img {
+    width: 250px;
+}
+
+.card_for_team_member .lower_part {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.card_for_team_member .lower_part .team_members_social_icons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.team_members_social_icon {
+    width: 15px;
+    height: 15px;
+}
+
+/* For Small Screens Mobile */
+@media (max-width: 767px) {
+    .team_members_card_container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card_for_team_member {
+        width: 90%; 
+        max-width: 320px; 
+        height: auto;
+    }
+
+    .card_for_team_member .upper_part img {
+        width: 200px; 
+    }
+
+    .card_for_team_member .lower_part {
+        height: auto;
+    }
+}
+
+/* For Medium Screens Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .team_members_card_container {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .card_for_team_member {
+        width: 45%; 
+    }
+
+    .card_for_team_member .upper_part img {
+        width: 220px; 
+    }
+
+    .card_for_team_member .lower_part {
+        height: auto; 
+    }
+}
+
+/* For Large Screens Desktop */
+@media (min-width: 1025px) {
+    .team_members_card_container {
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .card_for_team_member {
+        width: 22%; 
+    }
+
+    .card_for_team_member .upper_part img {
+        width: 250px; 
+    }
+
+    .card_for_team_member .lower_part {
+        height: auto;
+    }
+}

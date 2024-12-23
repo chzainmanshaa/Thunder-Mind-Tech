@@ -1,0 +1,126 @@
+.excel {
+    text-align: center;
+    background: #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.excellation_container {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.excellation_card {
+    background-color: #1F2937;
+    border-radius: 12px;
+    width: 280px; 
+    padding: 20px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px; 
+}
+
+.excellation_card:hover {
+    transform: translateY(-5px);
+}
+
+.excellation_card_upper_part {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.excellation_card_upper_part img {
+    width: 40px;
+    height: auto;
+}
+
+.excellation_card_upper_part h4 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.excellation_card_lower_part {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.technologies {
+    background-color: #4B5563;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* Responsive Design: Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .excellation_container {
+        margin-left: 0; 
+        margin-right: 0; 
+        justify-content: center; 
+        gap: 15px; 
+    }
+
+    .excellation_card {
+        width: 100%; 
+        padding: 15px; 
+    }
+
+    .excellation_card_upper_part h4 {
+        font-size: 20px; 
+    }
+
+    .excellation_card_lower_part {
+        flex-direction: column; 
+        gap: 8px;
+    }
+}
+
+/* Responsive Design: Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .excellation_container {
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .excellation_card {
+        width: 45%; 
+    }
+
+    .excellation_card_upper_part h4 {
+        font-size: 22px; 
+    }
+
+    .excellation_card_lower_part {
+        flex-direction: column;
+        gap: 10px; 
+    }
+}
+
+/* Large Screens Desktop */
+@media (min-width: 1025px) {
+    .excellation_container {
+        margin-left: 40px; 
+        margin-right: 40px; 
+    }
+
+    .excellation_card {
+        width: 22%; 
+    }
+
+    .excellation_card_upper_part h4 {
+        font-size: 24px; 
+    }
+
+    .excellation_card_lower_part {
+        flex-direction: row; 
+        gap: 5px;
+    }
+}

@@ -1,0 +1,153 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px 40px;
+}
+
+.logo {
+    height: 36px;
+}
+
+.menu {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+.menubars {
+    height: 24px;
+    cursor: pointer;
+}
+
+.menu h3 {
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+    cursor: default;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -300px; 
+    width: 300px;
+    height: 100%;
+    background-color: #111827;
+    color: white;
+    padding: 30px;
+    transition: right 0.3s ease; 
+    z-index: 100;
+}
+
+.side-menu.open {
+    right: 0; 
+}
+
+.close-btn {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    text-align: right;
+}
+
+.menu-items {
+    list-style: none;
+    margin-top: 40px;
+}
+
+.menu-items li {
+    margin: 20px 0;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.menu-items li a:hover {
+    color: #FF6A00;     
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 80px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icon img:hover {
+    opacity: 0.7;
+}
+
+
+
+/* For Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+
+    .navbar h3{
+        display: none;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .side-menu {
+        width: 250px; 
+        padding: 20px;
+    }
+
+    .menu-items li a {
+        font-size: 18px; 
+    }
+
+    .social-icons {
+        margin-top: 60px;
+    }
+}
+
+/* For Tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .logo {
+        height: 32px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu-items li a {
+        font-size: 18px;
+    }
+
+    .social-icons {
+        margin-top: 70px;
+    }
+}
+
+/* For Large Screens/Desktop */
+@media (min-width: 1025px) {
+    .menu {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .social-icons {
+        margin-top: 80px;
+    }
+}
